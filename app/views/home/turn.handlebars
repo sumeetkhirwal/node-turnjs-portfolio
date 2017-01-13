@@ -1,0 +1,32 @@
+<div class="container">
+
+	<div id="canvas">
+		<div id="book-zoom"style="margin-top:200px">
+			<div class="book">
+				<div depth="5" class="hard"> <div class="side">Test</div> </div>
+				<div depth="5" class="hard front-side"> <div class="depth">Test</div> </div>
+				<div><span style="paddin-top:200px">Test</span></div>
+				<div>Test</div>
+				<div class="hard"> Test </div>
+				<div class="hard front-side">Test</div>
+			</div>
+		</div>
+		<div id="slider-bar" class="turnjs-slider">
+			<div id="slider"></div>
+		</div>
+	</div>
+</div>
+<script>
+var flipbook = $('.book');
+flipbook.turn({
+		elevation: 50,
+		autoCenter: true,
+		gradients: true,
+		duration: 1000
+	});
+
+
+	// Show canvas
+
+	$('#canvas').css({visibility: ''});
+</script>
